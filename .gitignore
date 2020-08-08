@@ -1,3 +1,5 @@
 .idea
 out
 workspace_algorithm.iml
+.DS_Store
+studyAlgorithm.iml
