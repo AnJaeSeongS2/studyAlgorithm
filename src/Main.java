@@ -1,3 +1,4 @@
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
@@ -15,6 +16,19 @@ public class Main {
         return name;
     }
     public static void main(String[] args) {
+        com.sonan.programmers.recentSongName.Solution sol3 = new com.sonan.programmers.recentSongName.Solution();
+//        sol3.solution()
+
+
+        SimpleDateFormat timeFormat = new SimpleDateFormat("HH:mm");
+        try {
+            System.out.println(timeFormat.parse("13:10").getTime() - timeFormat.parse("14:15").getTime());
+        } catch (Exception e) {
+
+        }
+
+
+
         com.sonan.programmers.skillChecks.level2.Solution sol2 = new com.sonan.programmers.skillChecks.level2.Solution();
         int result2_1 = sol2.solution("JEROEN");
         int result2_2 = sol2.solution("JAN");
