@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
@@ -9,11 +10,25 @@ import java.util.ListIterator;
  * Git Hub : https://github.com/AnJaeSeongS2
  */
 public class Main {
+    private static char[] charArrayTest(char[] name, char change) {
+        name[1] = change;
+        return name;
+    }
     public static void main(String[] args) {
+        com.sonan.programmers.skillChecks.level2.Solution sol2 = new com.sonan.programmers.skillChecks.level2.Solution();
+        int result2_1 = sol2.solution("JEROEN");
+        int result2_2 = sol2.solution("JAN");
+
         com.sonan.programmers.failPercent.Solution sol = new com.sonan.programmers.failPercent.Solution();
         int[] result = sol.solution(5, new int[]{2, 1, 2, 6, 2, 4, 3, 3});
         int[] result2 = sol.solution(4, new int[]{4,4,4,4,4});
         System.out.println("end");
+
+        char[] testChar = "asdf".toCharArray();
+        char[] testChar1 = charArrayTest(testChar, 'A');
+        char[] testChar2 = charArrayTest(testChar, 'B');
+
+
 
         List<Integer> test = new LinkedList<>();
         test.add(1);
