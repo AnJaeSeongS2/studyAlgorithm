@@ -1,4 +1,4 @@
-package com.sonan.programmers.practice.sort;
+package com.sonan.programmers.practice.stack_queue;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -8,14 +8,13 @@ import org.junit.jupiter.api.Test;
  * @Calculated_Big_O:
  * @github: http://github.com/AnJaeseongS2
  * @createdBy: jindam91@naver.com
- * @created: 2020-08-12
+ * @created: 2020-08-13
  * @since: 1.8
  */
-class HIndexTest {
+class StockTest {
 
   @Test
   void solution() {
-    assertEquals(3, new HIndex().solution(new int[]{3,0,6,1,5}));
-    assertEquals(4, new HIndex().solution(new int[]{1,2,5,6,6,6}));
+    assertArrayEquals(new int[]{4,3,1,1,0}, new Stock().solution(new int[]{1,2,3,2,3}));
   }
 }
