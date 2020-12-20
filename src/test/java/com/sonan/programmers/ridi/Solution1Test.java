@@ -1,4 +1,8 @@
-import static org.junit.jupiter.api.Assertions.*;
+package com.sonan.programmers.ridi;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.Test;
 
 /**
  * @Calculated_Big_O:
@@ -9,4 +13,9 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 class Solution1Test {
 
+  @Test
+  void solution() {
+
+    assertEquals(6, new Solution1().solution(3,3,2));
+  }
 }
