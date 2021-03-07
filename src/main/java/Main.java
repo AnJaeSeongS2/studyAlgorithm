@@ -11,11 +11,32 @@ import java.util.ListIterator;
  * Git Hub : https://github.com/AnJaeSeongS2
  */
 public class Main {
+
     private static char[] charArrayTest(char[] name, char change) {
         name[1] = change;
         return name;
     }
     public static void main(String[] args) {
+        List<Integer> list = new LinkedList<Integer>(){{
+            add(1);
+            add(2);
+            add(3);
+            add(4);
+        }};
+
+        ListIterator<Integer> iter2 = list.listIterator();
+        while (iter2.hasNext()) {
+            Integer cache = iter2.next();
+            if (cache > 10) {
+                break;
+            }
+            iter2.remove();
+            iter2.add(cache + 5);
+        }
+
+        System.out.println(list);
+
+
         com.sonan.programmers.recentSongName.Solution sol3 = new com.sonan.programmers.recentSongName.Solution();
 //        sol3.solution()
 
