@@ -1,4 +1,2 @@
-# studyAlgorithm
-studyAlgorithm
-other local commit test
-other local commit test
+# study-algorithm
+YEAHHHHHHHHH
